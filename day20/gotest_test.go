@@ -1,6 +1,7 @@
 package gotest
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -30,4 +31,14 @@ func Test_Division_table(t *testing.T) {
 			t.Log("測試通過")
 		}
 	}
+}
+
+func ExampleDivision() {
+	i, _ := Division(6, 2)
+	x, _ := Division(12, 3)
+	fmt.Println(i)
+	fmt.Println(x)
+	// Output:
+	// 3
+	// 4
 }
